@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A web application about cat memes">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Julius">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hillarious Cat Memes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="icon"
+      href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/256/cat-icon.png"
+    />
+</head>
+<body>
+    <nav>
+      <span class="mobile">
+        <img src="https://cdn4.iconfinder.com/data/icons/tupix-1/30/list-512.png" alt="Hamburger Icon">
+      </span>
+      <span class="relative-container">
+        <img src="https://clipartcraft.com/images/cat-transparent-cute.png" alt="Cat Icon">
+        <b>Cat Meme Club</b>
+        <span class="circle-red">5</span>
+      </span>
+
+      <ul class="desktop">
+        <li><a href="https://www.facebook.com/?locale=id_ID">Facebook</a></li>
+        <li><a href="https://twitter.com/">Twitter</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+      </ul>
+    </nav>
+    <header class="full-screen" id="header">
+      <h1>Welcome Cat Lovers</h1>
+      <p>Give Your Soul To This Adorable Deities</p>
+    </header>
+    <main>
+      <section id="cat-photos">
+        <h2>🐱Offer Your Soul🐱</h2>
+        <div class="grid-container">
+          <div id="item-1">
+            <img src="https://www.boredpanda.com/blog/wp-content/uploads/2016/08/cute-kittens-7-57b30aa10707a__605.jpg" alt="Grey kitten sleeping">
+          </div>
+          <div id="item-2">
+            <img src="https://www.boredpanda.com/blog/wp-content/uploads/2016/08/cute-kittens-64-57b32778a2fe1__605.jpg" alt="Big eyed black cat">
+          </div>
+          <div id="item-3">
+            <img src="https://www.boredpanda.com/blog/wp-content/uploads/2016/08/cute-kittens-29-57b30ad229af3__605.jpg" alt="Surrendering cat">
+          </div>
+          <div id="item-4">
+            <img src="https://www.boredpanda.com/blog/wp-content/uploads/2016/08/cute-kittens-30-57b30ad41bc90__605.jpg" alt="Adorable kitten">
+          </div>
+        </div>
+      </section>
+
+      <section id="cat-facts">
+        <h2>Did you know?</h2>
+        <div class="flex-container">
+          <ul>
+            <li>Cat see you as their mother.</li>
+            <li>Orange cat have a polarizing personality.</li>
+            <li>Cat loves oatmeal.</li>
+            <li>Tiger is also a cat.</li>
+            <li>Cats are believed to be the only mammals who don't taste sweetness.</li>
+            <li>Cats are nearsighted, but their peripheral vision and night vision are much better than that of humans.</li>
+            <li>Cats claws all curve downward, which means that they can't climb down trees head-first. Instead, they have to back down the trunk.</li>
+            <li>Cats have 230 bones, while humans only have 206.</li>
+            <li>Cats have whiskers on the backs of their front legs, as well.</li>
+            <li>Cats have the largest eyes relative to their head size of any mammal.</li>
+            <li>Cats use their long tails to balance themselves when they're jumping or walking along narrow ledges.</li>
+            <li>Male cats are more likely to be left-pawed, while female cats are more likely to be right-pawed.</li>
+            <li>Some cats can swim.</li>
+            <li>Cats will refuse an unpalatable food to the point of starvation.</li>
+          </ul>
+          <figure>
+            <img src="https://i.pinimg.com/originals/10/64/0b/10640b7825de7150ff3b71c2badda4bf.jpg" alt="Cats breed">
+            <figcaption>Different <em>Cat</em> Species.</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="section-video">
+        <h2>A Daily Dose For Your Soul</h2>
+        <div class="flex-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mwENYk66q6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section id="form-section">
+        <h2>Join The Cult!</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+              <label for="fullName">Full Name:</label>
+              <input id="fullName" type="text" required="">
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" required="">
+            </div>
+
+            <div>
+              <p>Do you have a cat?</p>
+              <input type="radio" id="yes" name="isIndonesia" value="Male">
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="isIndonesia" value="Female">
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Additional information:</legend>
+            <div>
+              <p>Are you keen to adopt more than one cat?</p>
+              <input id="cute" type="checkbox" name="personality" value="cute">
+              <label for="cute">Sure</label>
+              <input id="adorable" type="checkbox" name="personality" value="adorable">
+              <label for="adorable">I'll Think About It</label>
+              <input id="beautiful" type="checkbox" name="personality" value="beautiful">
+              <label for="beautiful">Absolutely</label>
+            </div>
+            <div>
+              <p>Convince us if you are qualified!</p>
+              <textarea rows="3"></textarea>
+            </div>
+            <div>
+              <p>Upload your selfie with your master here!:</p>
+              <input type="file" id="photo" name="myPenguinPhoto" required="" accept="image/png, image/jpeg">
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  
+
+</body>
+</html>
